@@ -1,6 +1,19 @@
 .App {
   text-align: center;
 }
+h1, 
+h2 {
+  color: #61dafb;
+  font-size: 2em;
+}
+.task {
+  color: yellow;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .App-logo {
   height: 40vmin;

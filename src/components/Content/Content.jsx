@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import Part from "../Header/Part";
 
 const Content = (props) => {
     return (
-        <div>
-            <p>{props.part1} {props.task1}</p>
-            <p>{props.part2} {props.task2}</p>
-            <p>{props.part3} {props.task3}</p>
-        </div>
+        <>
+            {props.tasks.map((task) => (
+                <Part part={task.part} task={task.task} />
+            ))}
+        </>
     );
 };
 
